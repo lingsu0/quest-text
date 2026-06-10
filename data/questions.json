@@ -5,10 +5,7 @@
       "type": "true_false",
       "title": "RDD和DataFrame的区别",
       "content": "RDD和DataFrame的区别之一是，后者具备Schema结构。",
-      "options": [
-        "正确",
-        "错误"
-      ],
+      "options": ["正确", "错误"],
       "correctAnswer": true,
       "explanation": "DataFrame 具有 Schema（模式）结构，能够描述数据的列名和类型；RDD 没有 Schema，是分布式的 Java 对象集合。",
       "difficulty": "easy",
@@ -19,10 +16,7 @@
       "type": "true_false",
       "title": "Spark MLlib与ML库的区别",
       "content": "Spark的mllib库是基于DataFrame的，而ml库是基于RDD的。",
-      "options": [
-        "正确",
-        "错误"
-      ],
+      "options": ["正确", "错误"],
       "correctAnswer": false,
       "explanation": "实际情况相反：MLlib 是基于 RDD 的机器学习库，而 ML（spark.ml）是基于 DataFrame 的高级机器学习库。",
       "difficulty": "medium",
@@ -33,10 +27,7 @@
       "type": "true_false",
       "title": "Spark底层语言",
       "content": "Spark的底层是使用Scala编程语言编写的。",
-      "options": [
-        "正确",
-        "错误"
-      ],
+      "options": ["正确", "错误"],
       "correctAnswer": true,
       "explanation": "Apache Spark 最初由加州大学伯克利分校 AMP 实验室使用 Scala 语言开发，底层核心代码主要使用 Scala 编写。",
       "difficulty": "easy",
@@ -47,10 +38,7 @@
       "type": "true_false",
       "title": "Scala单例对象",
       "content": "Scala提供了'单例对象'来实现静态方法和字段。Scala单例对象使用'object'关键字定义。",
-      "options": [
-        "正确",
-        "错误"
-      ],
+      "options": ["正确", "错误"],
       "correctAnswer": true,
       "explanation": "Scala 使用 object 关键字定义单例对象（Singleton Object），用于替代 Java 中的静态成员，实现静态方法和字段的功能。",
       "difficulty": "easy",
@@ -61,10 +49,7 @@
       "type": "true_false",
       "title": "元组与数组下标",
       "content": "元组的脚注是从1开始的，而数组的下标是从0开始的。",
-      "options": [
-        "正确",
-        "错误"
-      ],
+      "options": ["正确", "错误"],
       "correctAnswer": true,
       "explanation": "在 Scala 中，元组（Tuple）的元素访问使用 _1、_2 等，从 1 开始计数；而数组（Array）使用下标访问，从 0 开始。",
       "difficulty": "easy",
@@ -75,10 +60,7 @@
       "type": "true_false",
       "title": "Scala var变量",
       "content": "Scala中使用var定义的变量，可以对其值进行修改。",
-      "options": [
-        "正确",
-        "错误"
-      ],
+      "options": ["正确", "错误"],
       "correctAnswer": true,
       "explanation": "Scala 中 var 定义可变变量（mutable），其值可以被重新赋值；val 定义不可变变量（immutable）。",
       "difficulty": "easy",
@@ -89,18 +71,8 @@
       "type": "multiple_choice",
       "title": "Spark组件识别",
       "content": "下列属于Spark组件的是()",
-      "options": [
-        "Spark Core",
-        "Spark SQL",
-        "GraphX",
-        "MLlib"
-      ],
-      "correctAnswer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
+      "options": ["Spark Core", "Spark SQL", "GraphX", "MLlib"],
+      "correctAnswer": ["A", "B", "C", "D"],
       "explanation": "Spark 的核心组件包括：Spark Core（核心引擎）、Spark SQL（结构化数据处理）、Spark Streaming（流处理）、MLlib（机器学习）、GraphX（图计算）。",
       "difficulty": "easy",
       "points": 2
@@ -110,17 +82,8 @@
       "type": "multiple_choice",
       "title": "Scala中的序列",
       "content": "Scala中的序列有()",
-      "options": [
-        "数组",
-        "列表",
-        "向量",
-        "集合"
-      ],
-      "correctAnswer": [
-        "A",
-        "B",
-        "C"
-      ],
+      "options": ["数组", "列表", "向量", "集合"],
+      "correctAnswer": ["A", "B", "C"],
       "explanation": "Scala的Seq特质下包含List、Vector等序列类型；Array可通过隐式转换视为序列；Set属于集合(Collection)而非序列(Seq)。",
       "difficulty": "easy",
       "points": 2
@@ -130,17 +93,8 @@
       "type": "multiple_choice",
       "title": "创建RDD的方法",
       "content": "用于创建RDD的方法有()",
-      "options": [
-        "parallelize",
-        "makeRDD",
-        "textFile",
-        "toDF"
-      ],
-      "correctAnswer": [
-        "A",
-        "B",
-        "C"
-      ],
+      "options": ["parallelize", "makeRDD", "textFile", "toDF"],
+      "correctAnswer": ["A", "B", "C"],
       "explanation": "parallelize、makeRDD、textFile都是SparkContext中创建RDD的方法；toDF是将RDD转换为DataFrame的方法，不能用于创建RDD。",
       "difficulty": "medium",
       "points": 2
@@ -150,17 +104,8 @@
       "type": "multiple_choice",
       "title": "RDD转DataFrame的方式",
       "content": "将RDD变为DataFrame时，可以通过()的方式添加列名和类型",
-      "options": [
-        "使用toDF转换时通过参数设置",
-        "定义样例类使用反射机制映射",
-        "通过手动定义Schema结构定义",
-        "通过select算子进行设置"
-      ],
-      "correctAnswer": [
-        "A",
-        "B",
-        "C"
-      ],
+      "options": ["使用toDF转换时通过参数设置", "定义样例类使用反射机制映射", "通过手动定义Schema结构定义", "通过select算子进行设置"],
+      "correctAnswer": ["A", "B", "C"],
       "explanation": "RDD转DataFrame的三种方式：①toDF(\"col1\", \"col2\")传入列名；②定义case class利用反射自动映射；③手动定义StructType Schema。select是DataFrame的操作算子，不用于RDD转换时设置列名。",
       "difficulty": "medium",
       "points": 2
@@ -170,16 +115,8 @@
       "type": "multiple_choice",
       "title": "读取CSV生成DataFrame",
       "content": "要读取people.csv文件生成DataFrame，可以使用的命令是()",
-      "options": [
-        "spark.read.csv(\"people.csv\")",
-        "spark.read.format(\"people.csv\")",
-        "spark.read.format(\"csv\").load(\"people.csv\")",
-        "spark.read.load(\"people.csv\")"
-      ],
-      "correctAnswer": [
-        "A",
-        "C"
-      ],
+      "options": ["spark.read.csv(\"people.csv\")", "spark.read.format(\"people.csv\")", "spark.read.format(\"csv\").load(\"people.csv\")", "spark.read.load(\"people.csv\")"],
+      "correctAnswer": ["A", "C"],
       "explanation": "spark.read.csv()是直接读取CSV的便捷方法；spark.read.format(\"csv\").load()是通用格式读取方式。B选项format参数应为格式名而非文件路径；D选项默认读取Parquet格式。",
       "difficulty": "medium",
       "points": 2
@@ -189,16 +126,8 @@
       "type": "multiple_choice",
       "title": "Hadoop集群进程",
       "content": "下列属于Hadoop集群启动的进程是()",
-      "options": [
-        "NameNode",
-        "DataNode",
-        "Master",
-        "Worker"
-      ],
-      "correctAnswer": [
-        "A",
-        "B"
-      ],
+      "options": ["NameNode", "DataNode", "Master", "Worker"],
+      "correctAnswer": ["A", "B"],
       "explanation": "Hadoop HDFS的核心进程包括NameNode（名称节点）和DataNode（数据节点）。Master/Worker是Spark集群的进程角色，不属于Hadoop。",
       "difficulty": "easy",
       "points": 2
@@ -208,17 +137,8 @@
       "type": "multiple_choice",
       "title": "协同过滤算法",
       "content": "协同过滤算法主要包括()",
-      "options": [
-        "基于用户的协同过滤",
-        "基于物品的协同过滤",
-        "基于内容的协同过滤",
-        "基于模型的协同过滤"
-      ],
-      "correctAnswer": [
-        "A",
-        "B",
-        "D"
-      ],
+      "options": ["基于用户的协同过滤", "基于物品的协同过滤", "基于内容的协同过滤", "基于模型的协同过滤"],
+      "correctAnswer": ["A", "B", "D"],
       "explanation": "协同过滤（Collaborative Filtering）主要包括用户协同过滤、物品协同过滤和模型协同过滤（如矩阵分解）。基于内容的推荐（Content-Based）是独立的一类算法，不属于协同过滤。",
       "difficulty": "medium",
       "points": 2
@@ -228,12 +148,7 @@
       "type": "single_choice",
       "title": "Scala不可变变量定义",
       "content": "在Scala中，定义一个不可变整数变量的正确方式是()",
-      "options": [
-        "var num = 10",
-        "val num = 10",
-        "int num = 10",
-        "const num = 10"
-      ],
+      "options": ["var num = 10", "val num = 10", "int num = 10", "const num = 10"],
       "correctAnswer": "B",
       "explanation": "Scala中val定义不可变变量（immutable），var定义可变变量。Scala不使用int关键字（类型为Int），也没有const关键字。",
       "difficulty": "easy",
@@ -244,14 +159,9 @@
       "type": "single_choice",
       "title": "Spark SQL中用于创建DataFrame的入口点是()",
       "content": "Spark SQL中用于创建DataFrame的入口点是()",
-      "options": [
-        "SparkContext",
-        "SparkSession",
-        "SQLContext",
-        "HiveContext"
-      ],
+      "options": ["SparkContext", "SparkSession", "SQLContext", "HiveContext"],
       "correctAnswer": "B",
-      "explanation": "SparkSession 是 Spark 2.0 引入的统一编程入口，集成了 SQLContext、HiveContext 和 SparkContext 的功能，是创建 DataFrame 和 Dataset 的标准方式。SparkContext 是 Spark 1.x 时代的 RDD 编程入口；SQLContext 和 HiveContext 在 Spark 2.0+ 已被 SparkSession 统一替代。",
+      "explanation": "SparkSession 是 Spark 2.0 引入的统一编程入口，集成了 SQLContext、HiveContext 和 SparkContext 的功能，是创建 DataFrame 和 Dataset 的标准方式。",
       "difficulty": "easy",
       "points": 2
     },
@@ -260,14 +170,9 @@
       "type": "single_choice",
       "title": "语句(x:Int,y:Int)=>x-y可以简写为()",
       "content": "语句(x:Int,y:Int)=>x-y可以简写为()",
-      "options": [
-        "x-y",
-        "{x:Int-y:Int}",
-        "_ - _",
-        "(_:Int,_:Int)=>..."
-      ],
+      "options": ["x-y", "{x:Int-y:Int}", "_ - _", "(_:Int,_:Int)=>..."],
       "correctAnswer": "C",
-      "explanation": "在 Scala 中，匿名函数在上下文类型可推断时，可使用占位符语法简写为 _ - _，每个 _ 按顺序对应一个匿名参数。x-y 缺少函数定义语法；{x:Int-y:Int} 不符合 Scala 匿名函数语法；(_:Int,_:Int)=>... 是占位符与箭头混用的语法错误。",
+      "explanation": "在 Scala 中，匿名函数在上下文类型可推断时，可使用占位符语法简写为 _ - _，每个 _ 按顺序对应一个匿名参数。",
       "difficulty": "medium",
       "points": 2
     },
@@ -276,14 +181,9 @@
       "type": "single_choice",
       "title": "Scala中用于继承类的关键字是()",
       "content": "Scala中用于继承类的关键字是()",
-      "options": [
-        "extends",
-        "in",
-        "with in",
-        "extend"
-      ],
+      "options": ["extends", "in", "with in", "extend"],
       "correctAnswer": "A",
-      "explanation": "Scala中使用extends关键字来继承类。with关键字用于混入特质（trait），而不是继承类。in和extend不是Scala的继承关键字。",
+      "explanation": "Scala中使用extends关键字来继承类。with关键字用于混入特质（trait），而不是继承类。",
       "difficulty": "easy",
       "points": 2
     },
@@ -292,12 +192,7 @@
       "type": "single_choice",
       "title": "DAG是指()",
       "content": "DAG是指()",
-      "options": [
-        "有向图",
-        "有向无环图",
-        "无环图",
-        "有向有环图"
-      ],
+      "options": ["有向图", "有向无环图", "无环图", "有向有环图"],
       "correctAnswer": "B",
       "explanation": "DAG是Directed Acyclic Graph的缩写，中文含义是有向无环图。Spark中的DAGScheduler就是基于有向无环图进行任务调度。",
       "difficulty": "easy",
@@ -308,14 +203,9 @@
       "type": "single_choice",
       "title": "在启动spark-shell交互式界面时，采用默认的不指定参数的启动方式属于()部署方式",
       "content": "在启动spark-shell交互式界面时，采用默认的不指定参数的启动方式属于()部署方式",
-      "options": [
-        "local模式",
-        "StandAlone模式",
-        "Yarn模式",
-        "Mesos模式"
-      ],
+      "options": ["local模式", "StandAlone模式", "Yarn模式", "Mesos模式"],
       "correctAnswer": "A",
-      "explanation": "spark-shell在不指定任何参数时，默认以local模式启动，即在本地单机上运行。若要以其他模式运行，需要显式指定master参数，如--master yarn。",
+      "explanation": "spark-shell在不指定任何参数时，默认以local模式启动，即在本地单机上运行。",
       "difficulty": "easy",
       "points": 2
     },
@@ -324,14 +214,9 @@
       "type": "single_choice",
       "title": "以下定义一个包含5个整数的数组，正确的是()",
       "content": "以下定义一个包含5个整数的数组，正确的是()",
-      "options": [
-        "val arr = Array(1, 2, 3, 4, 5)",
-        "val arr = array(1, 2, 3, 4, 5)",
-        "val arr = Array(5)",
-        "val arr = Array[Int](5)"
-      ],
+      "options": ["val arr = Array(1, 2, 3, 4, 5)", "val arr = array(1, 2, 3, 4, 5)", "val arr = Array(5)", "val arr = Array[Int](5)"],
       "correctAnswer": "A",
-      "explanation": "Array(1,2,3,4,5)创建包含5个指定元素的数组。Array(5)创建包含一个元素5的数组；Array[Int](5)创建包含5个默认初始值（0）的数组；array是小写，不是Scala标准类名。",
+      "explanation": "Array(1,2,3,4,5)创建包含5个指定元素的数组。Array(5)创建包含一个元素5的数组；Array[Int](5)创建包含5个默认初始值（0）的数组。",
       "difficulty": "medium",
       "points": 2
     },
@@ -340,14 +225,9 @@
       "type": "single_choice",
       "title": "以下代码片段的输出结果是(): for (i <- 1 Until 5) print (i)",
       "content": "以下代码片段的输出结果是(): for (i <- 1 Until 5) print (i)",
-      "options": [
-        "12345",
-        "54321",
-        "1234",
-        "4321"
-      ],
+      "options": ["12345", "54321", "1234", "4321"],
       "correctAnswer": "C",
-      "explanation": "在Scala中，Until表示范围不包含上限，因此i的取值范围是1到4（包含1，不包含5），输出结果为1234。若使用to则包含上限，输出12345。",
+      "explanation": "在Scala中，Until表示范围不包含上限，因此i的取值范围是1到4（包含1，不包含5），输出结果为1234。",
       "difficulty": "easy",
       "points": 2
     },
@@ -356,12 +236,7 @@
       "type": "single_choice",
       "title": "要在Scala终端输入一个整数，以下哪个方法合适()",
       "content": "要在Scala终端输入一个整数，以下哪个方法合适()",
-      "options": [
-        "readInt()",
-        "readChar()",
-        "readLine()",
-        "readDouble()"
-      ],
+      "options": ["readInt()", "readChar()", "readLine()", "readDouble()"],
       "correctAnswer": "A",
       "explanation": "readInt()用于从控制台读取一个整数。readChar()读取字符，readLine()读取字符串，readDouble()读取浮点数。",
       "difficulty": "easy",
@@ -372,38 +247,264 @@
       "type": "single_choice",
       "title": "执行List(10,20,30,40,50).groupBy(_<30)后，返回的Map中，键true对应的值是()",
       "content": "执行List(10,20,30,40,50).groupBy(_<30)后，返回的Map中，键true对应的值是()",
-      "options": [
-        "List(10,20)",
-        "List(30, 40, 50)",
-        "List()",
-        "List(20,30)"
-      ],
+      "options": ["List(10,20)", "List(30, 40, 50)", "List()", "List(20,30)"],
       "correctAnswer": "A",
-      "explanation": "groupBy(_<30)按元素是否小于30分组。小于30的元素（10, 20）被分到键true对应的列表中；大于等于30的元素（30, 40, 50）被分到键false对应的列表中。",
+      "explanation": "groupBy(_<30)按元素是否小于30分组。小于30的元素（10, 20）被分到键true对应的列表中。",
       "difficulty": "medium",
       "points": 2
     },
     {
       "id": "24",
-      "type": "short_answer",
-      "title": "简述RDD和DataFrame的主要区别",
-      "content": "请简述RDD和DataFrame的主要区别（至少列出3点）",
-      "correctAnswer": "1. RDD是分布式的Java对象集合，DataFrame是具有Schema（模式）结构的分布式数据集合，能够描述数据的列名和类型。\n2. RDD是Spark 1.x的核心抽象，DataFrame是Spark 1.3引入的基于RDD的高级抽象，Spark 2.x后进一步发展为Dataset。\n3. RDD提供函数式编程接口（map、filter等），DataFrame提供SQL风格的声明式编程接口，支持SQL查询和优化。\n4. DataFrame具有Catalyst优化器，可以自动优化执行计划，RDD需要手动优化。\n5. DataFrame支持跨语言的统一API（Scala、Java、Python、R），RDD在不同语言中API差异较大。",
-      "keywords": ["Schema", "结构化", "优化", "SQL", "类型"],
-      "explanation": "RDD和DataFrame的主要区别包括：Schema结构、编程接口风格、执行优化、跨语言支持等方面。",
+      "type": "multiple_choice",
+      "title": "DataFrame降序排列",
+      "content": "对 DataFrame 中的元素按照 age 列降序排列的方法正确的是 ()",
+      "options": ["sort (col (\"age\").desc)", "orderBy (\"age\".asc)", "orderBy (col (\"age\").desc)", "sort (\"age\".asc)"],
+      "correctAnswer": ["A", "C"],
+      "explanation": "sort和orderBy都可以进行排序操作。使用col(\"age\").desc可以实现降序排列。orderBy(\"age\").asc和sort(\"age\").asc都是升序排列。",
       "difficulty": "medium",
-      "points": 5
+      "points": 3
     },
     {
       "id": "25",
-      "type": "short_answer",
-      "title": "简述Spark的懒加载机制",
-      "content": "请简述Spark中RDD的懒加载（Lazy Evaluation）机制及其优点",
-      "correctAnswer": "Spark的懒加载机制是指RDD的转换操作（Transformation）不会立即执行，而是记录下操作逻辑，只有当遇到行动操作（Action）时，才会触发实际的计算。\n\n优点：\n1. 减少不必要的计算：可以优化执行计划，避免中间结果的物化。\n2. 流水线执行：多个转换操作可以合并成一个阶段执行，减少数据读写开销。\n3. 容错恢复：通过血缘关系（Lineage）可以重新计算丢失的数据，无需检查点。",
-      "keywords": ["懒加载", "Transformation", "Action", "优化", "血缘"],
-      "explanation": "Spark的懒加载机制通过延迟执行转换操作，实现了执行计划优化和高效的流水线计算。",
+      "type": "multiple_choice",
+      "title": "RDD转DataFrame添加列名和类型",
+      "content": "将 RDD 变为 DataFrame 时，可以通过 () 的方式添加列名和类型",
+      "options": ["使用 toDF 转换时通过参数设置", "通过 select 算子进行设置", "定义样例类使用反射机制映射", "通过手动定义 Schema 结构定义"],
+      "correctAnswer": ["B", "C", "D"],
+      "explanation": "RDD转DataFrame的方式包括：使用toDF设置列名、定义case class进行反射映射、手动定义Schema结构。select算子是DataFrame操作，不能用于RDD转换。",
       "difficulty": "medium",
-      "points": 5
+      "points": 3
+    },
+    {
+      "id": "26",
+      "type": "multiple_choice",
+      "title": "保存DataFrame到JSON文件",
+      "content": "要把一个 DataFrame 保存到 people.json 文件中，下面正确的是 ()",
+      "options": ["df.write.json (\"people.json\")", "df.write (\"people.json\")", "df.json (\"people.json\")", "df.write.format (\"json\").save (\"people.json\")"],
+      "correctAnswer": ["A", "D"],
+      "explanation": "df.write.json()是直接保存为JSON的便捷方法；df.write.format(\"json\").save()是通用格式保存方式。df.write()和df.json()不是有效的保存方法。",
+      "difficulty": "medium",
+      "points": 3
+    },
+    {
+      "id": "27",
+      "type": "multiple_choice",
+      "title": "DataFrame常用操作",
+      "content": "以下操作中，是 DataFrame 的常用操作的有 ()",
+      "options": ["printSchema ()", "filter ()", "select ()", "sendto ()"],
+      "correctAnswer": ["A", "B", "C"],
+      "explanation": "printSchema用于打印DataFrame的模式信息，filter用于过滤数据，select用于选择列。sendto不是DataFrame的标准操作方法。",
+      "difficulty": "easy",
+      "points": 3
+    },
+    {
+      "id": "28",
+      "type": "single_choice",
+      "title": "手动定义Schema组装RDD",
+      "content": "手动定义 Schema 结构时通过 () 方法将 Schema 结构和 RDD 组装在一起",
+      "options": ["makeRDD", "toDF", "parallelize", "createDataFrame"],
+      "correctAnswer": "D",
+      "explanation": "createDataFrame方法可以接受RDD和Schema作为参数，将它们组装成DataFrame。makeRDD和parallelize用于创建RDD，toDF用于RDD到DataFrame的隐式转换。",
+      "difficulty": "medium",
+      "points": 2
+    },
+    {
+      "id": "29",
+      "type": "multiple_choice",
+      "title": "DataFrame筛选gender列",
+      "content": "从 DataFrame 中筛选 gender 列为 \"女\" 的元素的方法是 ()",
+      "options": ["filter (col (\"gender\")==\"女\")", "where (col (\"gender\")===\"女\")", "select (col (\"gender\")==\"女\")", "filter (col (\"gender\")===\"女\")"],
+      "correctAnswer": ["B", "D"],
+      "explanation": "在Spark中，===用于值相等比较，==用于引用比较。where和filter功能相同，都可以用于筛选数据。select用于选择列，不能直接用于筛选条件。",
+      "difficulty": "medium",
+      "points": 3
+    },
+    {
+      "id": "30",
+      "type": "multiple_choice",
+      "title": "读取JSON文件生成DataFrame",
+      "content": "要读取 people.json 文件生成 DataFrame，可以使用的命令是 ()",
+      "options": ["spark.read.format (\"json\").load (\"people.json\")", "spark.read.parquet (\"people.json\")", "spark.read.json (\"people.json\")", "spark.read.format (\"csv\").load (\"people.json\")"],
+      "correctAnswer": ["A", "C"],
+      "explanation": "spark.read.json()是直接读取JSON的便捷方法；spark.read.format(\"json\").load()是通用格式读取方式。parquet和csv格式无法正确读取JSON文件。",
+      "difficulty": "medium",
+      "points": 3
+    },
+    {
+      "id": "31",
+      "type": "single_choice",
+      "title": "显示DataFrame内容",
+      "content": "用于以二维表形式显示 DataFrame 的方法是 ()",
+      "options": ["first", "collect", "head", "show"],
+      "correctAnswer": "D",
+      "explanation": "show方法用于以表格形式显示DataFrame的内容。first和head返回第一行数据，collect返回所有数据的数组。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "32",
+      "type": "multiple_choice",
+      "title": "DataFrame描述",
+      "content": "下面关于 DataFrame 的描述正确的是 ()",
+      "options": ["Spark 能够轻松实现从 MySQL 到 DataFrame 的转化，并且支持 SQL 查询", "DataFrame 的推出，让 Spark 具备了处理大规模结构化数据的能力", "DataFrame 比原有的 RDD 转化方式更加简单易用，而且获得了更高的计算性能", "DataFrame 是一种以 RDD 为基础的分布式数据集，提供了详细的结构信息"],
+      "correctAnswer": ["A", "B", "C", "D"],
+      "explanation": "DataFrame是Spark的核心数据结构，支持多种数据源导入，提供结构化数据处理能力，相比RDD具有更好的性能和易用性。",
+      "difficulty": "medium",
+      "points": 3
+    },
+    {
+      "id": "33",
+      "type": "multiple_choice",
+      "title": "键值对RDD排序",
+      "content": "有一个键值对 RDD，名称为 pairRDD，它包含 4 个元素，分别是 (\"Hadoop\",1)、(\"Spark\",1)、(\"Hive\",1) 和 (\"Spark\",1)，想要实现按照键单词升序排列，正确的写法是 ()",
+      "options": ["pairRDD.sortBy (i=>i._1)", "pairRDD.sortByKey (false)", "pairRDD.sortBy (i=>i._1,false)", "pairRDD.sortByKey ()"],
+      "correctAnswer": ["A", "D"],
+      "explanation": "sortBy(i=>i._1)按键升序排列；sortByKey()默认按键升序排列。sortByKey(false)和sortBy(i=>i._1,false)是降序排列。",
+      "difficulty": "medium",
+      "points": 3
+    },
+    {
+      "id": "34",
+      "type": "multiple_choice",
+      "title": "RDD转换操作",
+      "content": "以下操作中，() 是转换操作",
+      "options": ["filter ()", "reduceByKey (func)", "first ()", "count ()"],
+      "correctAnswer": ["A", "B"],
+      "explanation": "filter和reduceByKey是转换操作（Transformation），返回新的RDD。first和count是行动操作（Action），返回具体的值。",
+      "difficulty": "easy",
+      "points": 3
+    },
+    {
+      "id": "35",
+      "type": "multiple_choice",
+      "title": "RDD操作类型",
+      "content": "RDD 操作包括的类型有 ()",
+      "options": ["连接 (Join)", "转换 (Transformation)", "行动 (Action)", "分组 (GroupBy)"],
+      "correctAnswer": ["B", "C"],
+      "explanation": "RDD操作分为转换操作（Transformation）和行动操作（Action）两类。Join和GroupBy是具体的转换操作方法，不是操作类型。",
+      "difficulty": "easy",
+      "points": 3
+    },
+    {
+      "id": "36",
+      "type": "single_choice",
+      "title": "RDD组合键值对",
+      "content": "以下可以将两个 RDD 中的元素组合成键值对的是 ()",
+      "options": ["filter", "reduce", "zip", "map"],
+      "correctAnswer": "C",
+      "explanation": "zip操作可以将两个RDD中对应位置的元素组合成键值对。filter用于过滤，reduce用于聚合，map用于转换。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "37",
+      "type": "single_choice",
+      "title": "flatMap操作结果",
+      "content": "val array=Array (\"Hadoop is good\",\"Spark is fast\",\"Spark is better\") val lines=sc.parallelize (array) val words=lines.flatMap (i=>i.split (\" \")) 上述语句执行以后，words 中的元素是 ()",
+      "options": ["\"Hadoop is good\",\"Spark is fast\",\"Spark is better\"", "\"Hadoop\",\"Spark\",\"fast\"", "\"Hadoop\",\"is\",\"good\",\"Spark\",\"is\",\"fast\",\"Spark\",\"is\",\"better\"", "\"Spark\",\"is\",\"fast\""],
+      "correctAnswer": "C",
+      "explanation": "flatMap会将每个字符串按空格分割，并将结果扁平化，所以最终words包含所有分割后的单词。",
+      "difficulty": "medium",
+      "points": 2
+    },
+    {
+      "id": "38",
+      "type": "multiple_choice",
+      "title": "创建RDD的方法",
+      "content": "下面用来创建 RDD 的方法是 ()",
+      "options": ["parallelize ()", "makeRDD ()", "textfile ()", "readLine ()"],
+      "correctAnswer": ["A", "B", "C"],
+      "explanation": "parallelize、makeRDD、textFile都是SparkContext中创建RDD的方法。readLine是Scala的标准输入方法，不是创建RDD的方法。",
+      "difficulty": "easy",
+      "points": 3
+    },
+    {
+      "id": "39",
+      "type": "multiple_choice",
+      "title": "RDD行动操作",
+      "content": "以下操作中，() 是行动操作",
+      "options": ["map ()", "collect ()", "groupByKey ()", "take ()"],
+      "correctAnswer": ["B", "D"],
+      "explanation": "collect和take是行动操作（Action），会触发实际计算并返回结果。map和groupByKey是转换操作（Transformation），延迟执行。",
+      "difficulty": "easy",
+      "points": 3
+    },
+    {
+      "id": "40",
+      "type": "multiple_choice",
+      "title": "创建RDD的方法",
+      "content": "创建 RDD 的方法是 ()",
+      "options": ["sc.parallelize (序列，分区数)", "sc.makeRDD (序列，分区数)", "sc.textFile (路径，分区数)", "sc.createRDD (序列，分区数)"],
+      "correctAnswer": ["A", "B", "C"],
+      "explanation": "parallelize、makeRDD、textFile是SparkContext中创建RDD的标准方法。createRDD不是SparkContext的标准方法名。",
+      "difficulty": "easy",
+      "points": 3
+    },
+    {
+      "id": "41",
+      "type": "multiple_choice",
+      "title": "RDD持久化描述",
+      "content": "以下关于 RDD 的持久化的描述，正确的是 ()",
+      "options": ["persist (MEMORY_AND_DISK): 如果内存不足，超出的分区将会被存放在硬盘上", "通过持久化 (缓存) 机制可以避免重复计算的开销", "persist (MEMORY_ONLY): 默认，如果内存不足，超出的分区将不再缓存", "使用 cache () 方法时，会调用 persist (MEMORY_ONLY)"],
+      "correctAnswer": ["A", "B", "C", "D"],
+      "explanation": "RDD持久化可以避免重复计算，MEMORY_AND_DISK在内存不足时写入磁盘，MEMORY_ONLY只缓存到内存，cache()是persist(MEMORY_ONLY)的简写。",
+      "difficulty": "medium",
+      "points": 3
+    },
+    {
+      "id": "42",
+      "type": "single_choice",
+      "title": "RDD筛选偶数元素",
+      "content": "有一个 RDD，名为 rdd1，包含元素为 ((\"a\",2),(\"b\",5),(\"c\",10),(\"d\",11))，想要从中筛选出值为偶数所有元素，正确的写法是 ()",
+      "options": ["rdd1.filter (i=>(i)%2!=0)", "rdd1.filter (i=>i._2%2!=0)", "rdd1.filter (i=>i._2%2==0)", "rdd1.filter (i=>(i)%2==0)"],
+      "correctAnswer": "C",
+      "explanation": "键值对RDD的元素是元组，需要使用_i访问。_2表示值部分，%2==0表示偶数。",
+      "difficulty": "medium",
+      "points": 2
+    },
+    {
+      "id": "43",
+      "type": "single_choice",
+      "title": "RDD特点",
+      "content": "以下 () 不是 RDD 的特点",
+      "options": ["可变", "容错", "弹性", "分布式"],
+      "correctAnswer": "A",
+      "explanation": "RDD是不可变的（Immutable），一旦创建就不能修改。RDD具有容错、弹性和分布式的特点。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "44",
+      "type": "multiple_choice",
+      "title": "RDD分区的作用",
+      "content": "关于 RDD 分区的作用，下面描述正确的是 ()",
+      "options": ["分批处理，避免内存溢出", "容错性能高，无需全量计算", "实现并行计算", "数据本地性，减少通信开销"],
+      "correctAnswer": ["A", "B", "C", "D"],
+      "explanation": "RDD分区可以实现并行计算、分批处理、提高容错能力和数据本地性，从而提升整体性能。",
+      "difficulty": "medium",
+      "points": 3
+    },
+    {
+      "id": "45",
+      "type": "single_choice",
+      "title": "map操作结果",
+      "content": "val data=Array (1,2,3,4,5) val rdd1=sc.parallelize (data) val rdd2=rdd1.map (x=>x+10) 上述语句执行以后，rdd2 中的元素是 ()",
+      "options": ["11,12,13,14,15", "1,2,3,4,5", "10,11,12,13,14", "3,4,5,6,7"],
+      "correctAnswer": "A",
+      "explanation": "map操作将每个元素加10，所以1+10=11, 2+10=12, 依此类推，结果为11,12,13,14,15。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "46",
+      "type": "multiple_choice",
+      "title": "本地文件系统路径格式",
+      "content": "以下是本地文件系统的路径格式的是 ()",
+      "options": ["file:///home/zs/data.txt", "hdfs://master:9000/data.txt", "/home/zs/data.txt", "file://home/zs/data.txt"],
+      "correctAnswer": ["A", "C"],
+      "explanation": "file:///home/zs/data.txt是标准的file协议格式；/home/zs/data.txt是相对路径格式。hdfs://开头是HDFS路径；file://home缺少斜杠，格式不正确。",
+      "difficulty": "medium",
+      "points": 3
     }
   ]
 }
