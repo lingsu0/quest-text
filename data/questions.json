@@ -505,6 +505,28 @@
       "explanation": "file:///home/zs/data.txt是标准的file协议格式；/home/zs/data.txt是相对路径格式。hdfs://开头是HDFS路径；file://home缺少斜杠，格式不正确。",
       "difficulty": "medium",
       "points": 3
+    },
+    {
+      "id": "47",
+      "type": "true_false",
+      "title": "intersection算子",
+      "content": "intersection算子可以实现获取两个RDD中都有的元素构建一个新的RDD",
+      "options": ["正确", "错误"],
+      "correctAnswer": true,
+      "explanation": "intersection算子用于计算两个RDD的交集，返回包含两个RDD中都存在的元素的新RDD。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "48",
+      "type": "single_choice",
+      "title": "RDD分区的主要作用",
+      "content": "RDD 的分区（Partition）主要作用是（）",
+      "options": ["提高数据安全性", "方便数据的集中管理", "实现数据的并行处理", "减少数据存储的空间"],
+      "correctAnswer": "C",
+      "explanation": "RDD分区的主要作用是实现数据的并行处理。将数据分成多个分区后，Spark可以在不同的节点上并行处理不同的分区，从而提高整体处理性能。",
+      "difficulty": "easy",
+      "points": 2
     }
   ]
 }
