@@ -1,0 +1,28 @@
+{
+  "name": "online-exam-system",
+  "version": "1.0.0",
+  "description": "基于 HTML + TypeScript 的在线练题系统",
+  "main": "server.js",
+  "bin": "server.js",
+  "pkg": {
+    "assets": [
+      "index.html",
+      "css/**/*",
+      "js/**/*",
+      "data/**/*"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node server.js",
+    "dev": "npm run build && npm start",
+    "package": "pkg . --compress GZip"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

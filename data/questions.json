@@ -1,0 +1,409 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "type": "true_false",
+      "title": "RDD和DataFrame的区别",
+      "content": "RDD和DataFrame的区别之一是，后者具备Schema结构。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "correctAnswer": true,
+      "explanation": "DataFrame 具有 Schema（模式）结构，能够描述数据的列名和类型；RDD 没有 Schema，是分布式的 Java 对象集合。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "2",
+      "type": "true_false",
+      "title": "Spark MLlib与ML库的区别",
+      "content": "Spark的mllib库是基于DataFrame的，而ml库是基于RDD的。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "correctAnswer": false,
+      "explanation": "实际情况相反：MLlib 是基于 RDD 的机器学习库，而 ML（spark.ml）是基于 DataFrame 的高级机器学习库。",
+      "difficulty": "medium",
+      "points": 2
+    },
+    {
+      "id": "3",
+      "type": "true_false",
+      "title": "Spark底层语言",
+      "content": "Spark的底层是使用Scala编程语言编写的。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "correctAnswer": true,
+      "explanation": "Apache Spark 最初由加州大学伯克利分校 AMP 实验室使用 Scala 语言开发，底层核心代码主要使用 Scala 编写。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "4",
+      "type": "true_false",
+      "title": "Scala单例对象",
+      "content": "Scala提供了'单例对象'来实现静态方法和字段。Scala单例对象使用'object'关键字定义。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "correctAnswer": true,
+      "explanation": "Scala 使用 object 关键字定义单例对象（Singleton Object），用于替代 Java 中的静态成员，实现静态方法和字段的功能。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "5",
+      "type": "true_false",
+      "title": "元组与数组下标",
+      "content": "元组的脚注是从1开始的，而数组的下标是从0开始的。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "correctAnswer": true,
+      "explanation": "在 Scala 中，元组（Tuple）的元素访问使用 _1、_2 等，从 1 开始计数；而数组（Array）使用下标访问，从 0 开始。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "6",
+      "type": "true_false",
+      "title": "Scala var变量",
+      "content": "Scala中使用var定义的变量，可以对其值进行修改。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "correctAnswer": true,
+      "explanation": "Scala 中 var 定义可变变量（mutable），其值可以被重新赋值；val 定义不可变变量（immutable）。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "7",
+      "type": "multiple_choice",
+      "title": "Spark组件识别",
+      "content": "下列属于Spark组件的是()",
+      "options": [
+        "Spark Core",
+        "Spark SQL",
+        "GraphX",
+        "MLlib"
+      ],
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Spark 的核心组件包括：Spark Core（核心引擎）、Spark SQL（结构化数据处理）、Spark Streaming（流处理）、MLlib（机器学习）、GraphX（图计算）。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "8",
+      "type": "multiple_choice",
+      "title": "Scala中的序列",
+      "content": "Scala中的序列有()",
+      "options": [
+        "数组",
+        "列表",
+        "向量",
+        "集合"
+      ],
+      "correctAnswer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "Scala的Seq特质下包含List、Vector等序列类型；Array可通过隐式转换视为序列；Set属于集合(Collection)而非序列(Seq)。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "9",
+      "type": "multiple_choice",
+      "title": "创建RDD的方法",
+      "content": "用于创建RDD的方法有()",
+      "options": [
+        "parallelize",
+        "makeRDD",
+        "textFile",
+        "toDF"
+      ],
+      "correctAnswer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "parallelize、makeRDD、textFile都是SparkContext中创建RDD的方法；toDF是将RDD转换为DataFrame的方法，不能用于创建RDD。",
+      "difficulty": "medium",
+      "points": 2
+    },
+    {
+      "id": "10",
+      "type": "multiple_choice",
+      "title": "RDD转DataFrame的方式",
+      "content": "将RDD变为DataFrame时，可以通过()的方式添加列名和类型",
+      "options": [
+        "使用toDF转换时通过参数设置",
+        "定义样例类使用反射机制映射",
+        "通过手动定义Schema结构定义",
+        "通过select算子进行设置"
+      ],
+      "correctAnswer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "RDD转DataFrame的三种方式：①toDF(\"col1\", \"col2\")传入列名；②定义case class利用反射自动映射；③手动定义StructType Schema。select是DataFrame的操作算子，不用于RDD转换时设置列名。",
+      "difficulty": "medium",
+      "points": 2
+    },
+    {
+      "id": "11",
+      "type": "multiple_choice",
+      "title": "读取CSV生成DataFrame",
+      "content": "要读取people.csv文件生成DataFrame，可以使用的命令是()",
+      "options": [
+        "spark.read.csv(\"people.csv\")",
+        "spark.read.format(\"people.csv\")",
+        "spark.read.format(\"csv\").load(\"people.csv\")",
+        "spark.read.load(\"people.csv\")"
+      ],
+      "correctAnswer": [
+        "A",
+        "C"
+      ],
+      "explanation": "spark.read.csv()是直接读取CSV的便捷方法；spark.read.format(\"csv\").load()是通用格式读取方式。B选项format参数应为格式名而非文件路径；D选项默认读取Parquet格式。",
+      "difficulty": "medium",
+      "points": 2
+    },
+    {
+      "id": "12",
+      "type": "multiple_choice",
+      "title": "Hadoop集群进程",
+      "content": "下列属于Hadoop集群启动的进程是()",
+      "options": [
+        "NameNode",
+        "DataNode",
+        "Master",
+        "Worker"
+      ],
+      "correctAnswer": [
+        "A",
+        "B"
+      ],
+      "explanation": "Hadoop HDFS的核心进程包括NameNode（名称节点）和DataNode（数据节点）。Master/Worker是Spark集群的进程角色，不属于Hadoop。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "13",
+      "type": "multiple_choice",
+      "title": "协同过滤算法",
+      "content": "协同过滤算法主要包括()",
+      "options": [
+        "基于用户的协同过滤",
+        "基于物品的协同过滤",
+        "基于内容的协同过滤",
+        "基于模型的协同过滤"
+      ],
+      "correctAnswer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "协同过滤（Collaborative Filtering）主要包括用户协同过滤、物品协同过滤和模型协同过滤（如矩阵分解）。基于内容的推荐（Content-Based）是独立的一类算法，不属于协同过滤。",
+      "difficulty": "medium",
+      "points": 2
+    },
+    {
+      "id": "14",
+      "type": "single_choice",
+      "title": "Scala不可变变量定义",
+      "content": "在Scala中，定义一个不可变整数变量的正确方式是()",
+      "options": [
+        "var num = 10",
+        "val num = 10",
+        "int num = 10",
+        "const num = 10"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Scala中val定义不可变变量（immutable），var定义可变变量。Scala不使用int关键字（类型为Int），也没有const关键字。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "15",
+      "type": "single_choice",
+      "title": "Spark SQL中用于创建DataFrame的入口点是()",
+      "content": "Spark SQL中用于创建DataFrame的入口点是()",
+      "options": [
+        "SparkContext",
+        "SparkSession",
+        "SQLContext",
+        "HiveContext"
+      ],
+      "correctAnswer": "B",
+      "explanation": "SparkSession 是 Spark 2.0 引入的统一编程入口，集成了 SQLContext、HiveContext 和 SparkContext 的功能，是创建 DataFrame 和 Dataset 的标准方式。SparkContext 是 Spark 1.x 时代的 RDD 编程入口；SQLContext 和 HiveContext 在 Spark 2.0+ 已被 SparkSession 统一替代。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "16",
+      "type": "single_choice",
+      "title": "语句(x:Int,y:Int)=>x-y可以简写为()",
+      "content": "语句(x:Int,y:Int)=>x-y可以简写为()",
+      "options": [
+        "x-y",
+        "{x:Int-y:Int}",
+        "_ - _",
+        "(_:Int,_:Int)=>..."
+      ],
+      "correctAnswer": "C",
+      "explanation": "在 Scala 中，匿名函数在上下文类型可推断时，可使用占位符语法简写为 _ - _，每个 _ 按顺序对应一个匿名参数。x-y 缺少函数定义语法；{x:Int-y:Int} 不符合 Scala 匿名函数语法；(_:Int,_:Int)=>... 是占位符与箭头混用的语法错误。",
+      "difficulty": "medium",
+      "points": 2
+    },
+    {
+      "id": "17",
+      "type": "single_choice",
+      "title": "Scala中用于继承类的关键字是()",
+      "content": "Scala中用于继承类的关键字是()",
+      "options": [
+        "extends",
+        "in",
+        "with in",
+        "extend"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Scala中使用extends关键字来继承类。with关键字用于混入特质（trait），而不是继承类。in和extend不是Scala的继承关键字。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "18",
+      "type": "single_choice",
+      "title": "DAG是指()",
+      "content": "DAG是指()",
+      "options": [
+        "有向图",
+        "有向无环图",
+        "无环图",
+        "有向有环图"
+      ],
+      "correctAnswer": "B",
+      "explanation": "DAG是Directed Acyclic Graph的缩写，中文含义是有向无环图。Spark中的DAGScheduler就是基于有向无环图进行任务调度。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "19",
+      "type": "single_choice",
+      "title": "在启动spark-shell交互式界面时，采用默认的不指定参数的启动方式属于()部署方式",
+      "content": "在启动spark-shell交互式界面时，采用默认的不指定参数的启动方式属于()部署方式",
+      "options": [
+        "local模式",
+        "StandAlone模式",
+        "Yarn模式",
+        "Mesos模式"
+      ],
+      "correctAnswer": "A",
+      "explanation": "spark-shell在不指定任何参数时，默认以local模式启动，即在本地单机上运行。若要以其他模式运行，需要显式指定master参数，如--master yarn。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "20",
+      "type": "single_choice",
+      "title": "以下定义一个包含5个整数的数组，正确的是()",
+      "content": "以下定义一个包含5个整数的数组，正确的是()",
+      "options": [
+        "val arr = Array(1, 2, 3, 4, 5)",
+        "val arr = array(1, 2, 3, 4, 5)",
+        "val arr = Array(5)",
+        "val arr = Array[Int](5)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Array(1,2,3,4,5)创建包含5个指定元素的数组。Array(5)创建包含一个元素5的数组；Array[Int](5)创建包含5个默认初始值（0）的数组；array是小写，不是Scala标准类名。",
+      "difficulty": "medium",
+      "points": 2
+    },
+    {
+      "id": "21",
+      "type": "single_choice",
+      "title": "以下代码片段的输出结果是(): for (i <- 1 Until 5) print (i)",
+      "content": "以下代码片段的输出结果是(): for (i <- 1 Until 5) print (i)",
+      "options": [
+        "12345",
+        "54321",
+        "1234",
+        "4321"
+      ],
+      "correctAnswer": "C",
+      "explanation": "在Scala中，Until表示范围不包含上限，因此i的取值范围是1到4（包含1，不包含5），输出结果为1234。若使用to则包含上限，输出12345。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "22",
+      "type": "single_choice",
+      "title": "要在Scala终端输入一个整数，以下哪个方法合适()",
+      "content": "要在Scala终端输入一个整数，以下哪个方法合适()",
+      "options": [
+        "readInt()",
+        "readChar()",
+        "readLine()",
+        "readDouble()"
+      ],
+      "correctAnswer": "A",
+      "explanation": "readInt()用于从控制台读取一个整数。readChar()读取字符，readLine()读取字符串，readDouble()读取浮点数。",
+      "difficulty": "easy",
+      "points": 2
+    },
+    {
+      "id": "23",
+      "type": "single_choice",
+      "title": "执行List(10,20,30,40,50).groupBy(_<30)后，返回的Map中，键true对应的值是()",
+      "content": "执行List(10,20,30,40,50).groupBy(_<30)后，返回的Map中，键true对应的值是()",
+      "options": [
+        "List(10,20)",
+        "List(30, 40, 50)",
+        "List()",
+        "List(20,30)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "groupBy(_<30)按元素是否小于30分组。小于30的元素（10, 20）被分到键true对应的列表中；大于等于30的元素（30, 40, 50）被分到键false对应的列表中。",
+      "difficulty": "medium",
+      "points": 2
+    },
+    {
+      "id": "24",
+      "type": "short_answer",
+      "title": "简述RDD和DataFrame的主要区别",
+      "content": "请简述RDD和DataFrame的主要区别（至少列出3点）",
+      "correctAnswer": "1. RDD是分布式的Java对象集合，DataFrame是具有Schema（模式）结构的分布式数据集合，能够描述数据的列名和类型。\n2. RDD是Spark 1.x的核心抽象，DataFrame是Spark 1.3引入的基于RDD的高级抽象，Spark 2.x后进一步发展为Dataset。\n3. RDD提供函数式编程接口（map、filter等），DataFrame提供SQL风格的声明式编程接口，支持SQL查询和优化。\n4. DataFrame具有Catalyst优化器，可以自动优化执行计划，RDD需要手动优化。\n5. DataFrame支持跨语言的统一API（Scala、Java、Python、R），RDD在不同语言中API差异较大。",
+      "keywords": ["Schema", "结构化", "优化", "SQL", "类型"],
+      "explanation": "RDD和DataFrame的主要区别包括：Schema结构、编程接口风格、执行优化、跨语言支持等方面。",
+      "difficulty": "medium",
+      "points": 5
+    },
+    {
+      "id": "25",
+      "type": "short_answer",
+      "title": "简述Spark的懒加载机制",
+      "content": "请简述Spark中RDD的懒加载（Lazy Evaluation）机制及其优点",
+      "correctAnswer": "Spark的懒加载机制是指RDD的转换操作（Transformation）不会立即执行，而是记录下操作逻辑，只有当遇到行动操作（Action）时，才会触发实际的计算。\n\n优点：\n1. 减少不必要的计算：可以优化执行计划，避免中间结果的物化。\n2. 流水线执行：多个转换操作可以合并成一个阶段执行，减少数据读写开销。\n3. 容错恢复：通过血缘关系（Lineage）可以重新计算丢失的数据，无需检查点。",
+      "keywords": ["懒加载", "Transformation", "Action", "优化", "血缘"],
+      "explanation": "Spark的懒加载机制通过延迟执行转换操作，实现了执行计划优化和高效的流水线计算。",
+      "difficulty": "medium",
+      "points": 5
+    }
+  ]
+}
